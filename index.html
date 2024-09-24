@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Load Factor Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Electricity Load Factor Calculator</h2>
+        <label for="energy">Energy Usage in kWh:</label>
+        <input type="number" id="energy" placeholder="Ex: 8" />
+
+        <label for="peak">Peak Demand:</label>
+        <input type="number" id="peak" placeholder="74.51" />
+
+        <label for="days">Number of Days in Billing Period:</label>
+        <input type="number" id="days" placeholder="30" />
+
+        <button onclick="calculateLoadFactor()">Calculate Load Factor</button>
+
+        <div class="result">
+            Load Factor %: <span id="loadFactor">0.00%</span>
+        </div>
+    </div>
+    <script src="/calculation.js"></script>
+</body>
+
+</html>
